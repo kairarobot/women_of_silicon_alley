@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +18,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    // [Optional] Power your app with Local Datastore. For more info, go to
+    // https://parse.com/docs/ios_guide#localdatastore/iOS
+    [Parse enableLocalDatastore];
+    
+    // Initialize Parse.
+    [Parse setApplicationId:@"ZxclCO9EWC4yxJhLgOR3rFm2WuwaJA37xzzDise8"
+                  clientKey:@"UkD7LU7KgpXEmdZWvliUMhvOf1JQjhbqz3Lgq71K"];
+    
+    // [Optional] Track statistics around application opens.
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
     return YES;
 }
 
