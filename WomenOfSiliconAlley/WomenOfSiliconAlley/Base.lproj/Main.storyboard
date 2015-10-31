@@ -22,7 +22,7 @@
                                 <rect key="frame" x="20" y="220" width="560" height="380"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="YmG-fV-dZp">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ImageCell" id="YmG-fV-dZp">
                                         <rect key="frame" x="0.0" y="28" width="560" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YmG-fV-dZp" id="fO3-rM-8bB">
@@ -60,6 +60,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="D7Y-n6-QjL" secondAttribute="trailing" id="vuh-N9-mdH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="D7Y-n6-QjL" id="91d-Mo-cPj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
