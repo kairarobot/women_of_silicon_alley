@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		561A3CE40E25D639F6A321CD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E10D0A837233AA80C18C18DF /* libPods.a */; };
 		D9EC760C1BE50BB2000DE867 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EC760B1BE50BB2000DE867 /* main.m */; };
 		D9EC760F1BE50BB2000DE867 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EC760E1BE50BB2000DE867 /* AppDelegate.m */; };
 		D9EC76121BE50BB2000DE867 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EC76111BE50BB2000DE867 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3029A458CAEDFE2E8B2A7FB5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		43D9E24FB51B9399CE6E1D61 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D9EC76071BE50BB2000DE867 /* WomenOfSiliconAlley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WomenOfSiliconAlley.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9EC760B1BE50BB2000DE867 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D9EC760D1BE50BB2000DE867 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		D9EC762B1BE50BB2000DE867 /* WomenOfSiliconAlleyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WomenOfSiliconAlleyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9EC762F1BE50BB2000DE867 /* WomenOfSiliconAlleyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WomenOfSiliconAlleyUITests.m; sourceTree = "<group>"; };
 		D9EC76311BE50BB2000DE867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E10D0A837233AA80C18C18DF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				561A3CE40E25D639F6A321CD /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E27BA9EAF12B90A5D102A58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43D9E24FB51B9399CE6E1D61 /* Pods.debug.xcconfig */,
+				3029A458CAEDFE2E8B2A7FB5 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D9EC75FE1BE50BB2000DE867 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +99,8 @@
 				D9EC76231BE50BB2000DE867 /* WomenOfSiliconAlleyTests */,
 				D9EC762E1BE50BB2000DE867 /* WomenOfSiliconAlleyUITests */,
 				D9EC76081BE50BB2000DE867 /* Products */,
+				2E27BA9EAF12B90A5D102A58 /* Pods */,
+				DEF429EEF4493CBD7E30E140 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +156,14 @@
 			path = WomenOfSiliconAlleyUITests;
 			sourceTree = "<group>";
 		};
+		DEF429EEF4493CBD7E30E140 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E10D0A837233AA80C18C18DF /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D9EC76341BE50BB2000DE867 /* Build configuration list for PBXNativeTarget "WomenOfSiliconAlley" */;
 			buildPhases = (
+				B1F9EC384407ADA839C8B6DC /* Check Pods Manifest.lock */,
 				D9EC76031BE50BB2000DE867 /* Sources */,
 				D9EC76041BE50BB2000DE867 /* Frameworks */,
 				D9EC76051BE50BB2000DE867 /* Resources */,
+				CC099A2C8B56A250C1506FB7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +293,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B1F9EC384407ADA839C8B6DC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CC099A2C8B56A250C1506FB7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D9EC76031BE50BB2000DE867 /* Sources */ = {
@@ -412,6 +471,7 @@
 		};
 		D9EC76351BE50BB2000DE867 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43D9E24FB51B9399CE6E1D61 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WomenOfSiliconAlley/Info.plist;
@@ -423,6 +483,7 @@
 		};
 		D9EC76361BE50BB2000DE867 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3029A458CAEDFE2E8B2A7FB5 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WomenOfSiliconAlley/Info.plist;
@@ -499,6 +560,7 @@
 				D9EC76361BE50BB2000DE867 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9EC76371BE50BB2000DE867 /* Build configuration list for PBXNativeTarget "WomenOfSiliconAlleyTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +569,7 @@
 				D9EC76391BE50BB2000DE867 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D9EC763A1BE50BB2000DE867 /* Build configuration list for PBXNativeTarget "WomenOfSiliconAlleyUITests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +578,7 @@
 				D9EC763C1BE50BB2000DE867 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
