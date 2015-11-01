@@ -9,6 +9,8 @@
 #import "AddFilterVC.h"
 #import "FilterStoryVC.h"
 #import "cameraImageDelegate.h"
+#import "StoryCollection.h"
+#import <ParseUI/ParseUI.h>
 
 @interface AddFilterVC ()
 
@@ -16,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *userStory;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
 @property (weak, nonatomic) IBOutlet UIImageView *libertyImageView;
+@property (weak, nonatomic) IBOutlet PFImageView *pfUserImage;
 
 @property (nonatomic) BOOL touchingLabel;
 
@@ -64,8 +67,12 @@
 }
 
 -(void) prepareForSegue:(nonnull UIStoryboardSegue *)segue sender:(nullable id)sender {
-    FilterStoryVC *vc = segue.destinationViewController;
-    vc.delegate = self;
+    
+    if ([[segue identifier] isEqualToString:@"CaptureImage"]) {
+        FilterStoryVC *vc = segue.destinationViewController;
+        vc.delegate = self;
+    } 
+    
     
 }
 
@@ -81,9 +88,19 @@
 
 - (IBAction)saveButtonTapped:(UIBarButtonItem *)sender {
     
+    
     if (self.filteredImage.image != nil) {
+        
         [self capture];
+        
+        StoryCollection *userStory = [[StoryCollection alloc]init];
+        NSData *data = UIImageJPEGRepresentation(self.filteredImage.image, 0.5f);
+        PFFile *imageFile = [PFFile fileWithData:data];
+        userStory.photo = imageFile;
+        [userStory saveInBackground];
     }
+    
+    
 }
 
 

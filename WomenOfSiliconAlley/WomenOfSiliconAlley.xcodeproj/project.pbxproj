@@ -15,6 +15,9 @@
 		3D37800F1BE6434B00932EF5 /* NickNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D37800D1BE6434B00932EF5 /* NickNameViewController.m */; };
 		3D3780111BE6436B00932EF5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3780101BE6436B00932EF5 /* QuartzCore.framework */; };
 		3D3780131BE6437F00932EF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3780121BE6437F00932EF5 /* UIKit.framework */; };
+		3D7571E61BE6B11900A8EF21 /* StoryCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7571E51BE6B11900A8EF21 /* StoryCollection.m */; };
+		3D7571E91BE6B52800A8EF21 /* StoryCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7571E81BE6B52800A8EF21 /* StoryCollectionVC.m */; };
+		3D7571EC1BE6BD7900A8EF21 /* StoryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7571EB1BE6BD7900A8EF21 /* StoryCollectionViewCell.m */; };
 		561A3CE40E25D639F6A321CD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E10D0A837233AA80C18C18DF /* libPods.a */; };
 		5FE565B11BE6A029003BD539 /* AddFilterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE565AE1BE6A029003BD539 /* AddFilterVC.m */; };
 		5FE565B21BE6A029003BD539 /* FilterStoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE565B01BE6A029003BD539 /* FilterStoryVC.m */; };
@@ -65,6 +68,12 @@
 		3D37800D1BE6434B00932EF5 /* NickNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NickNameViewController.m; sourceTree = "<group>"; };
 		3D3780101BE6436B00932EF5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		3D3780121BE6437F00932EF5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3D7571E41BE6B11900A8EF21 /* StoryCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryCollection.h; sourceTree = "<group>"; };
+		3D7571E51BE6B11900A8EF21 /* StoryCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryCollection.m; sourceTree = "<group>"; };
+		3D7571E71BE6B52800A8EF21 /* StoryCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryCollectionVC.h; sourceTree = "<group>"; };
+		3D7571E81BE6B52800A8EF21 /* StoryCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryCollectionVC.m; sourceTree = "<group>"; };
+		3D7571EA1BE6BD7900A8EF21 /* StoryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryCollectionViewCell.h; sourceTree = "<group>"; };
+		3D7571EB1BE6BD7900A8EF21 /* StoryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryCollectionViewCell.m; sourceTree = "<group>"; };
 		43D9E24FB51B9399CE6E1D61 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5FE565AD1BE6A028003BD539 /* AddFilterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFilterVC.h; sourceTree = "<group>"; };
 		5FE565AE1BE6A029003BD539 /* AddFilterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFilterVC.m; sourceTree = "<group>"; };
@@ -165,6 +174,8 @@
 		5FE565AC1BE69FB7003BD539 /* Filter */ = {
 			isa = PBXGroup;
 			children = (
+				3D7571E41BE6B11900A8EF21 /* StoryCollection.h */,
+				3D7571E51BE6B11900A8EF21 /* StoryCollection.m */,
 				5FE565AD1BE6A028003BD539 /* AddFilterVC.h */,
 				5FE565AE1BE6A029003BD539 /* AddFilterVC.m */,
 				5FE565AF1BE6A029003BD539 /* FilterStoryVC.h */,
@@ -188,6 +199,8 @@
 				D9EC763F1BE52A54000DE867 /* StoryTableViewCell.xib */,
 				D9DBAE9C1BE5967A000478D8 /* DetailStoryViewController.h */,
 				D9DBAE9D1BE5967A000478D8 /* DetailStoryViewController.m */,
+				3D7571EA1BE6BD7900A8EF21 /* StoryCollectionViewCell.h */,
+				3D7571EB1BE6BD7900A8EF21 /* StoryCollectionViewCell.m */,
 			);
 			name = Story;
 			sourceTree = "<group>";
@@ -228,6 +241,8 @@
 				D9EC76181BE50BB2000DE867 /* LaunchScreen.storyboard */,
 				D9EC761B1BE50BB2000DE867 /* Info.plist */,
 				D9EC760A1BE50BB2000DE867 /* Supporting Files */,
+				3D7571E71BE6B52800A8EF21 /* StoryCollectionVC.h */,
+				3D7571E81BE6B52800A8EF21 /* StoryCollectionVC.m */,
 			);
 			path = WomenOfSiliconAlley;
 			sourceTree = "<group>";
@@ -442,11 +457,14 @@
 				D9DBAE9E1BE5967A000478D8 /* DetailStoryViewController.m in Sources */,
 				D9EC760F1BE50BB2000DE867 /* AppDelegate.m in Sources */,
 				3D3780071BE6405300932EF5 /* MessageCellXib.m in Sources */,
+				3D7571E91BE6B52800A8EF21 /* StoryCollectionVC.m in Sources */,
 				5FE565B11BE6A029003BD539 /* AddFilterVC.m in Sources */,
 				5FE565B61BE6A049003BD539 /* UIImage+Filter.m in Sources */,
 				5FE565B21BE6A029003BD539 /* FilterStoryVC.m in Sources */,
 				D9EC760C1BE50BB2000DE867 /* main.m in Sources */,
+				3D7571EC1BE6BD7900A8EF21 /* StoryCollectionViewCell.m in Sources */,
 				3D37800F1BE6434B00932EF5 /* NickNameViewController.m in Sources */,
+				3D7571E61BE6B11900A8EF21 /* StoryCollection.m in Sources */,
 				D9EC76441BE54D91000DE867 /* Story.m in Sources */,
 				3D3780001BE63FD500932EF5 /* ChatViewController.m in Sources */,
 				3D3780081BE6405300932EF5 /* Message.m in Sources */,

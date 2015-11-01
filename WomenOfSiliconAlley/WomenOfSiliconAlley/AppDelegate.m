@@ -10,6 +10,7 @@
 #import <Parse/Parse.h>
 #import "Story.h"
 #import "Message.h"
+#import "StoryCollection.h"
 
 @interface AppDelegate ()
 
@@ -37,6 +38,10 @@
     // Chat register class in Parse
     [Message registerSubclass];
     
+    
+    // Story collection register
+    [StoryCollection registerSubclass];
+
     return YES;
 }
 
