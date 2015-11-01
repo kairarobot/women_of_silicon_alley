@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YfI-2o-NdL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9046" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YfI-2o-NdL">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -18,9 +17,9 @@
                         <color key="selectedImageTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="oM3-EI-OH4" kind="relationship" relationship="viewControllers" id="lMR-vD-hKB"/>
-                        <segue destination="jod-Uo-ZCx" kind="relationship" relationship="viewControllers" id="tO9-q4-Jpl"/>
-                        <segue destination="o7j-Nk-q7J" kind="relationship" relationship="viewControllers" id="2mQ-KF-980"/>
+                        <segue destination="jod-Uo-ZCx" kind="relationship" relationship="viewControllers" id="qa3-hv-axC"/>
+                        <segue destination="oM3-EI-OH4" kind="relationship" relationship="viewControllers" id="S7I-WB-Xhg"/>
+                        <segue destination="fpv-Yw-1Uh" kind="relationship" relationship="viewControllers" id="ANY-a6-aAb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ll-Ps-l2l" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -357,6 +356,23 @@
             <point key="canvasLocation" x="1272" y="294"/>
         </scene>
         <!--Item-->
+        <scene sceneID="ZLs-CC-4xQ">
+            <objects>
+                <navigationController id="fpv-Yw-1Uh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="9lH-Zn-i5r"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oPH-gR-y6e">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="o7j-Nk-q7J" kind="relationship" relationship="rootViewController" id="pbc-H8-nWG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b4d-Vp-bRm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-887" y="1042"/>
+        </scene>
+        <!--Capture-->
         <scene sceneID="Hwb-Uw-L8d">
             <objects>
                 <viewController storyboardIdentifier="AddFilterID" id="o7j-Nk-q7J" customClass="AddFilterVC" sceneMemberID="viewController">
@@ -379,16 +395,9 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Story" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgT-65-gs0">
-                                <rect key="frame" x="20" y="84" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="KgT-65-gs0" firstAttribute="leading" secondItem="863-IO-Mpf" secondAttribute="leading" constant="20" id="8Yr-eV-c3n"/>
                             <constraint firstItem="ese-dI-IAR" firstAttribute="leading" secondItem="863-IO-Mpf" secondAttribute="leading" id="9lC-qS-DOj"/>
                             <constraint firstItem="ese-dI-IAR" firstAttribute="top" secondItem="863-IO-Mpf" secondAttribute="top" id="ElH-ZS-kQt"/>
                             <constraint firstItem="ese-dI-IAR" firstAttribute="leading" secondItem="863-IO-Mpf" secondAttribute="leadingMargin" constant="15" id="Erd-tF-TxQ"/>
@@ -396,33 +405,33 @@
                             <constraint firstItem="ese-dI-IAR" firstAttribute="centerX" secondItem="863-IO-Mpf" secondAttribute="centerX" id="a5e-J0-v2x"/>
                             <constraint firstItem="ese-dI-IAR" firstAttribute="top" secondItem="8jq-eB-Q9g" secondAttribute="bottom" id="b95-iT-Pwx"/>
                             <constraint firstItem="e3g-Dd-cdk" firstAttribute="top" secondItem="ese-dI-IAR" secondAttribute="bottom" id="nem-of-D4L"/>
-                            <constraint firstItem="KgT-65-gs0" firstAttribute="top" secondItem="8jq-eB-Q9g" secondAttribute="bottom" constant="20" id="pws-nX-CMb"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="Erd-tF-TxQ"/>
                                 <exclude reference="a5e-J0-v2x"/>
                                 <exclude reference="b95-iT-Pwx"/>
-                                <exclude reference="Erd-tF-TxQ"/>
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="EVn-15-JHD"/>
-                    <toolbarItems>
-                        <barButtonItem title="Item" id="V7e-Xe-xuk"/>
-                    </toolbarItems>
+                    <tabBarItem key="tabBarItem" title="Capture" image="camera119" selectedImage="camera119" id="EVn-15-JHD"/>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="hZb-6U-CyO">
                         <barButtonItem key="leftBarButtonItem" title="Save" id="wYg-dW-bNI">
                             <connections>
                                 <action selector="saveButtonTapped:" destination="o7j-Nk-q7J" id="Wic-WV-bxG"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="D0g-8v-V2Y"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="D0g-8v-V2Y">
+                            <connections>
+                                <segue destination="XOL-ox-tKz" kind="show" id="735-dj-K4v"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="filteredImage" destination="ese-dI-IAR" id="SrC-q4-Gy3"/>
                         <outlet property="saveButton" destination="wYg-dW-bNI" id="FhG-G2-DGj"/>
-                        <outlet property="userStory" destination="KgT-65-gs0" id="3d6-tI-qzM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ecd-I2-ZG9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -551,19 +560,19 @@
                                                 <exclude reference="F7F-Tr-mLG"/>
                                                 <exclude reference="bnm-3q-dpt"/>
                                                 <exclude reference="d4F-FE-aGq"/>
-                                                <exclude reference="qiI-F6-lGN"/>
                                                 <exclude reference="BPr-Fd-H7o"/>
                                                 <exclude reference="fab-4s-sil"/>
+                                                <exclude reference="qiI-F6-lGN"/>
                                                 <exclude reference="79s-Mk-RCc"/>
                                                 <exclude reference="OZw-ze-TLI"/>
                                                 <exclude reference="h9E-Oe-toy"/>
                                                 <exclude reference="Aqn-UE-6Qu"/>
-                                                <exclude reference="jvk-gV-Yd0"/>
                                                 <exclude reference="KSD-ey-I7n"/>
+                                                <exclude reference="jvk-gV-Yd0"/>
                                                 <exclude reference="24Z-lS-1ea"/>
+                                                <exclude reference="72U-n6-DTd"/>
                                                 <exclude reference="TcO-MD-wGD"/>
                                                 <exclude reference="pwg-Op-DcT"/>
-                                                <exclude reference="72U-n6-DTd"/>
                                             </mask>
                                         </variation>
                                     </view>
@@ -625,6 +634,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camera119" width="32" height="32"/>
         <image name="chat51" width="32" height="32"/>
         <image name="open161" width="32" height="32"/>
         <image name="wallpapercommon" width="640" height="1136"/>
