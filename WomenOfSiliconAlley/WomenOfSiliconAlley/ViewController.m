@@ -34,7 +34,6 @@ UITableViewDelegate
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     
     // register nib with table view
-    
     UINib *nib = [UINib nibWithNibName:@"StoryTableViewCell" bundle:nil];
     
     
@@ -46,19 +45,10 @@ UITableViewDelegate
     
     [self fetchParseQuery];
     
-    
-    
-
-    
 //    PFObject *newStoryObject = [PFObject objectWithClassName:@"Story"];
 //    newStoryObject[@"name"] = @"Zoufishan Mehdi";
-//    newStoryObject[@"role"] = @"iOS Developer in training @C4QNYC’s#AccessCode";
+//    newStoryObject[@"role"] = @"iOS Developer";
 //    newStoryObject[@"storyDetail"] = @"IIt all started with working on cybersecurity for my MA thesis. Tech always seemed out of my realm, and it was reinforced by others who would tell me that it wasn’t for me or it wasn’t up my alley. Normally I would just believe them, but this time I shook it off and gave it a shot. While I didn’t know this at the time, this was my first baby step veering towards tech. This very mentality of shrugging off negative comments and giving things a shot culminated in trying programming online until I decided to devote my full attention to it. I’m still trying to find my footing in this field but I have a feeling this is the start of something new.";
-//    
-//    
-////        Story *story1 = [[Story alloc] init];
-////        story1.role = @"iOS Developer";
-////        story1.name = @"Kaira";
 //    
 //    self.image = [UIImage imageNamed:@"zoufishan"];
 //    NSData *data = UIImageJPEGRepresentation(self.image, 0.5f);
@@ -97,34 +87,6 @@ UITableViewDelegate
             NSLog(@"Successfully retrieved");
             
             self.storyArray = objects;
-            // Do something with the found objects
-//            for (PFObject *object in objects) {
-//                NSLog(@"%@", object.objectId);
-//                
-//                //Retrieve the Column value of each PFObject
-//                NSString *storyID = object[@"objectId"];
-//                NSString *storyName = object[@"name"];
-//                NSString *storyRole = object[@"role"];
-//                NSString *storyDetail = object[@"storyDetail"];
-//                PFFile *imageFile = object[@"image"];
-//                
-//                // Assign it into storyArray
-//                
-//                
-//                [self.storyArray addObject:object];
-//                
-//                Story *story = [[Story alloc] init];
-//
-//                story.storyID =storyID;
-//                story.name = storyName;
-//                story.role = storyRole;
-//                story.storyDetail = storyDetail;
-//                story.image = imageFile;
-//                
-//                [self.storyArray addObject:story];
-                
-            
-//            }
             
             // reload the tableview
             [self.tableView reloadData];
@@ -158,18 +120,6 @@ UITableViewDelegate
     cell.nameLabel.text = storyResult.name;
     cell.storyImageView.file = storyResult.image;
     [cell.storyImageView loadInBackground];
-  
-//    PFFile *imageFile = storyResult.image;
-//    [imageFile getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
-//        if (!error) {
-//            cell.storyImageView.image = [UIImage imageWithData:data];
-//        }
-//    }];
-    
-//    imageView.image = [UIImage imageNamed:@"..."]; // placeholder image
-//    imageView.file = (PFFile *)someObject[@"picture"]; // remote image
-//    [imageView loadInBackground];
-    
     
     return cell;
 }
