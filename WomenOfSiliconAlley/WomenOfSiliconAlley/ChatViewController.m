@@ -79,11 +79,12 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     
+    // Delete username for test purposes
+//     [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"nickname"];
+    
     // Nickname register name
     [self userRegisterNickName];
-    
-    // Calls the method to fetch data from Parse
-    [self fetchDataFromParse];
+
 }
 
 -(void) fetchDataFromParse
@@ -123,7 +124,8 @@
 - (IBAction)sendButton:(UIButton *)sender {
     Message *text = [[Message alloc]init];
     text.contentText = self.chatView.text;
-    text.userName = @"Kaira";
+    NSString *nickname = [[NSUserDefaults standardUserDefaults]valueForKey:@"nickname"];
+    text.userName = nickname;
     [text saveInBackground];
     [self.chatView resignFirstResponder];
     [self.view layoutIfNeeded];
@@ -181,6 +183,10 @@
 
 
 - (void)viewDidLoad {
+    
+    // Calls the method to fetch data from Parse
+    [self fetchDataFromParse];
+    
     [super viewDidLoad];
     
     [self.sendButton setEnabled:NO];
