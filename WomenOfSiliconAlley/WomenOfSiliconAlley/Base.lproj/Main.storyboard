@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
@@ -22,7 +22,7 @@
                                 <rect key="frame" x="20" y="220" width="560" height="380"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ImageCell" id="YmG-fV-dZp">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="YmG-fV-dZp">
                                         <rect key="frame" x="0.0" y="28" width="560" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YmG-fV-dZp" id="fO3-rM-8bB">
@@ -38,23 +38,13 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="yxZ-wx-ij8">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="200"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7d-aa-kpe">
-                                        <rect key="frame" x="527" y="15" width="30" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="3Xo-IQ-vUY"/>
-                                            <constraint firstAttribute="width" constant="30" id="yrV-du-X3i"/>
-                                        </constraints>
-                                        <state key="normal" title="Button" image="Menu-50"/>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="1FX-IG-NsK"/>
                                     <constraint firstItem="yxZ-wx-ij8" firstAttribute="top" secondItem="ZZ3-fg-gwk" secondAttribute="top" id="6X6-zH-8so"/>
                                     <constraint firstAttribute="bottom" secondItem="yxZ-wx-ij8" secondAttribute="bottom" id="MhU-tl-kaD"/>
-                                    <constraint firstAttribute="trailing" secondItem="M7d-aa-kpe" secondAttribute="trailing" constant="3" id="Zrv-8O-nyt"/>
                                     <constraint firstItem="yxZ-wx-ij8" firstAttribute="leading" secondItem="ZZ3-fg-gwk" secondAttribute="leading" id="aEJ-EF-d5m"/>
-                                    <constraint firstItem="M7d-aa-kpe" firstAttribute="top" secondItem="ZZ3-fg-gwk" secondAttribute="top" constant="15" id="hpH-HD-TDw"/>
                                     <constraint firstAttribute="trailing" secondItem="yxZ-wx-ij8" secondAttribute="trailing" id="sDm-mE-Cc9"/>
                                 </constraints>
                             </view>
@@ -80,7 +70,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Menu-50" width="25" height="25"/>
         <image name="logo" width="320" height="240"/>
     </resources>
 </document>
