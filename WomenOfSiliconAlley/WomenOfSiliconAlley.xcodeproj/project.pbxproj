@@ -103,6 +103,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D9DBAE9F1BE5AF99000478D8 /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				D9EC76101BE50BB2000DE867 /* ViewController.h */,
+				D9EC76111BE50BB2000DE867 /* ViewController.m */,
+				D9EC76421BE54D91000DE867 /* Story.h */,
+				D9EC76431BE54D91000DE867 /* Story.m */,
+				D9EC763D1BE52A54000DE867 /* StoryTableViewCell.h */,
+				D9EC763E1BE52A54000DE867 /* StoryTableViewCell.m */,
+				D9EC763F1BE52A54000DE867 /* StoryTableViewCell.xib */,
+				D9DBAE9C1BE5967A000478D8 /* DetailStoryViewController.h */,
+				D9DBAE9D1BE5967A000478D8 /* DetailStoryViewController.m */,
+			);
+			name = Story;
+			sourceTree = "<group>";
+		};
 		D9EC75FE1BE50BB2000DE867 = {
 			isa = PBXGroup;
 			children = (
@@ -130,15 +146,7 @@
 			children = (
 				D9EC760D1BE50BB2000DE867 /* AppDelegate.h */,
 				D9EC760E1BE50BB2000DE867 /* AppDelegate.m */,
-				D9EC76101BE50BB2000DE867 /* ViewController.h */,
-				D9EC76111BE50BB2000DE867 /* ViewController.m */,
-				D9EC76421BE54D91000DE867 /* Story.h */,
-				D9EC76431BE54D91000DE867 /* Story.m */,
-				D9EC763D1BE52A54000DE867 /* StoryTableViewCell.h */,
-				D9EC763E1BE52A54000DE867 /* StoryTableViewCell.m */,
-				D9EC763F1BE52A54000DE867 /* StoryTableViewCell.xib */,
-				D9DBAE9C1BE5967A000478D8 /* DetailStoryViewController.h */,
-				D9DBAE9D1BE5967A000478D8 /* DetailStoryViewController.m */,
+				D9DBAE9F1BE5AF99000478D8 /* Story */,
 				D9EC76131BE50BB2000DE867 /* Main.storyboard */,
 				D9EC76161BE50BB2000DE867 /* Assets.xcassets */,
 				D9EC76181BE50BB2000DE867 /* LaunchScreen.storyboard */,
