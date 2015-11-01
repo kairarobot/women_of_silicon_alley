@@ -9,9 +9,9 @@
 #import "DetailStoryViewController.h"
 #import <ParseUI/ParseUI.h>
 
-@interface DetailStoryViewController ()
+@interface DetailStoryViewController () <UITabBarDelegate>
 
-@property (weak, nonatomic) IBOutlet UILabel *storyDetailLabel;
+@property (weak, nonatomic) IBOutlet UITextView *detailStoryTextView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *roleLabel;
 @property (weak, nonatomic) IBOutlet PFImageView *imageView;
@@ -23,11 +23,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.storyDetailLabel.text = self.selected.storyDetail;
+
+
+    
+    self.detailStoryTextView.text = self.selected.storyDetail;
     self.nameLabel.text = self.selected.name;
     self.roleLabel.text = self.selected.role;
     
     self.imageView.file = self.selected.image;
+    
+    CALayer * photoLayer = [self.imageView layer];
+    [photoLayer setMasksToBounds:YES];
+    [photoLayer setCornerRadius:10.0];
+    
+    // Photo Configuration
+    [photoLayer setBorderWidth:4.0];
+    [photoLayer setBorderColor:[[UIColor whiteColor] CGColor]];
+    
     [self.imageView loadInBackground];
     
 }
@@ -35,7 +47,7 @@
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:YES];
     
-    self.storyDetailLabel.hidden = YES;
+    self.detailStoryTextView.hidden = YES;
     self.nameLabel.hidden = YES;
     self.roleLabel.hidden = YES;
 }

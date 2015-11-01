@@ -16,7 +16,7 @@
     [photoLayer setMasksToBounds:YES];
     [photoLayer setCornerRadius:10.0];
     
-    // You can even add a border
+    // Photo Configuration
     [photoLayer setBorderWidth:4.0];
     [photoLayer setBorderColor:[[UIColor whiteColor] CGColor]];
 }

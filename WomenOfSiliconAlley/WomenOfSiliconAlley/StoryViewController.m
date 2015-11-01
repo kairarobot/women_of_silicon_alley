@@ -21,12 +21,14 @@ UITableViewDelegate
 @property (nonatomic) NSArray *storyArray;
 
 @property (nonatomic) UIImage *image;
+@property (weak, nonatomic) IBOutlet UITabBarItem *tabBarItem;
 
 @end
 
 @implementation StoryViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.tableView.dataSource = self;
@@ -72,6 +74,9 @@ UITableViewDelegate
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    
+    [[self navigationController] setNavigationBarHidden:YES animated:YES];
+    
     [super viewWillAppear:YES];
     [self.tableView reloadData];
     [self fetchParseQuery];

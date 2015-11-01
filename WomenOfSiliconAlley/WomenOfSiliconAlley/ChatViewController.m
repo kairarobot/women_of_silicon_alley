@@ -138,6 +138,7 @@
     }];
     [self retrieveMessages];
     
+    
 }
 
 
@@ -248,6 +249,10 @@
         // Disables the send button
         [self.sendButton setEnabled:NO];
         
+        // Clears the text
+        [textView setText:@""];
+
+        
         return NO;
     }
     
@@ -259,6 +264,9 @@
 
 #pragma Mark - Text Field Delegate Methods
 - (void)textViewDidBeginEditing:(UITextView *)textView {
+    
+    [textView setText:@""];
+    
     [self.view layoutIfNeeded];
     
     // Closes down the view with a drop animation
