@@ -6,12 +6,12 @@
 //  Copyright © 2015 Xiulan Shi. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "StoryViewController.h"
 #import "StoryTableViewCell.h"
 #import <ParseUI/ParseUI.h>
 #import "DetailStoryViewController.h"
 
-@interface ViewController ()
+@interface StoryViewController ()
 <
 UITableViewDataSource,
 UITableViewDelegate
@@ -24,7 +24,7 @@ UITableViewDelegate
 
 @end
 
-@implementation ViewController
+@implementation StoryViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

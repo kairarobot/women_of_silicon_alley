@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
 #import "Story.h"
+#import "Message.h"
 
 @interface AppDelegate ()
 
@@ -30,7 +31,11 @@
     // [Optional] Track statistics around application opens.
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
+    // Story register class in Parse
     [Story registerSubclass];
+    
+    // Chat register class in Parse
+    [Message registerSubclass];
     
     return YES;
 }

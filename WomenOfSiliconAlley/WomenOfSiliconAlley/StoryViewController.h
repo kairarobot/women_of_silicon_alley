@@ -10,7 +10,7 @@
 #import <Parse/Parse.h>
 #import "Story.h"
 
-@interface ViewController : UIViewController
+@interface StoryViewController : UIViewController
 
 
 @end

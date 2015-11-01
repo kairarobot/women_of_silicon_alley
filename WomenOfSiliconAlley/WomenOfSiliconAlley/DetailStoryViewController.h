@@ -6,10 +6,10 @@
 //  Copyright © 2015 Xiulan Shi. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "StoryViewController.h"
 #import "Story.h"
 
-@interface DetailStoryViewController : ViewController
+@interface DetailStoryViewController : StoryViewController
 
 @property (nonatomic) Story *selected;
 
