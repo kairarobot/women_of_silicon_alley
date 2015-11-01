@@ -15,12 +15,14 @@
 @property (weak, nonatomic) IBOutlet UIImageView *filteredImage;
 @property (weak, nonatomic) IBOutlet UILabel *userStory;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
+@property (weak, nonatomic) IBOutlet UIImageView *libertyImageView;
 
 @property (nonatomic) BOOL touchingLabel;
 
 @end
 
 @implementation AddFilterVC
+
 
 -(void)viewDidLoad {
     [super viewDidLoad];
@@ -31,6 +33,13 @@
 
 
 -(void) viewWillAppear:(BOOL)animated {
+    
+    if ([self.userStory.text isEqualToString:@""]){
+        self.libertyImageView.hidden = YES;
+    } else {
+        self.libertyImageView.hidden = NO;
+    }
+    
     [self.view setNeedsDisplay];
 }
 

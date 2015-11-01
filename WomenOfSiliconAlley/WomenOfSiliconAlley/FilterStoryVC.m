@@ -198,9 +198,9 @@
 
 - (IBAction)shareStoryButtonTapped:(UIButton *)sender {
     
-    [self.delegate memeGenerator:self.pictureTakenImageView.image theLabel:self.enterStoryTextField.text];
-   [self dismissViewControllerAnimated:YES completion:nil];
-   NSLog(@"working");
+    [self.delegate memeGenerator:self.pictureTakenImageView.image theLabel:@"Woman of Silicon Alley"];
+    [self.navigationController popToRootViewControllerAnimated:YES];
+    NSLog(@"working");
     
  
 }
