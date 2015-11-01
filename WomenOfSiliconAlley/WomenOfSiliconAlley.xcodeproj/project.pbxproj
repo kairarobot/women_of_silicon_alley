@@ -16,6 +16,9 @@
 		3D3780111BE6436B00932EF5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3780101BE6436B00932EF5 /* QuartzCore.framework */; };
 		3D3780131BE6437F00932EF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3780121BE6437F00932EF5 /* UIKit.framework */; };
 		561A3CE40E25D639F6A321CD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E10D0A837233AA80C18C18DF /* libPods.a */; };
+		5FE565B11BE6A029003BD539 /* AddFilterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE565AE1BE6A029003BD539 /* AddFilterVC.m */; };
+		5FE565B21BE6A029003BD539 /* FilterStoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE565B01BE6A029003BD539 /* FilterStoryVC.m */; };
+		5FE565B61BE6A049003BD539 /* UIImage+Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FE565B51BE6A049003BD539 /* UIImage+Filter.m */; };
 		D9DBAE9E1BE5967A000478D8 /* DetailStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DBAE9D1BE5967A000478D8 /* DetailStoryViewController.m */; };
 		D9EC760C1BE50BB2000DE867 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EC760B1BE50BB2000DE867 /* main.m */; };
 		D9EC760F1BE50BB2000DE867 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EC760E1BE50BB2000DE867 /* AppDelegate.m */; };
@@ -63,6 +66,13 @@
 		3D3780101BE6436B00932EF5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		3D3780121BE6437F00932EF5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		43D9E24FB51B9399CE6E1D61 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		5FE565AD1BE6A028003BD539 /* AddFilterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFilterVC.h; sourceTree = "<group>"; };
+		5FE565AE1BE6A029003BD539 /* AddFilterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFilterVC.m; sourceTree = "<group>"; };
+		5FE565AF1BE6A029003BD539 /* FilterStoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterStoryVC.h; sourceTree = "<group>"; };
+		5FE565B01BE6A029003BD539 /* FilterStoryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterStoryVC.m; sourceTree = "<group>"; };
+		5FE565B31BE6A049003BD539 /* cameraImageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cameraImageDelegate.h; sourceTree = "<group>"; };
+		5FE565B41BE6A049003BD539 /* UIImage+Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Filter.h"; sourceTree = "<group>"; };
+		5FE565B51BE6A049003BD539 /* UIImage+Filter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Filter.m"; sourceTree = "<group>"; };
 		D9DBAE9C1BE5967A000478D8 /* DetailStoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailStoryViewController.h; sourceTree = "<group>"; };
 		D9DBAE9D1BE5967A000478D8 /* DetailStoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailStoryViewController.m; sourceTree = "<group>"; };
 		D9EC76071BE50BB2000DE867 /* WomenOfSiliconAlley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WomenOfSiliconAlley.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -152,6 +162,20 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
+		5FE565AC1BE69FB7003BD539 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				5FE565AD1BE6A028003BD539 /* AddFilterVC.h */,
+				5FE565AE1BE6A029003BD539 /* AddFilterVC.m */,
+				5FE565AF1BE6A029003BD539 /* FilterStoryVC.h */,
+				5FE565B01BE6A029003BD539 /* FilterStoryVC.m */,
+				5FE565B31BE6A049003BD539 /* cameraImageDelegate.h */,
+				5FE565B41BE6A049003BD539 /* UIImage+Filter.h */,
+				5FE565B51BE6A049003BD539 /* UIImage+Filter.m */,
+			);
+			name = Filter;
+			sourceTree = "<group>";
+		};
 		D9DBAE9F1BE5AF99000478D8 /* Story */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +221,7 @@
 				D9EC760E1BE50BB2000DE867 /* AppDelegate.m */,
 				3D3780091BE6433D00932EF5 /* Nickname */,
 				3D377FFD1BE63FC800932EF5 /* Chat */,
+				5FE565AC1BE69FB7003BD539 /* Filter */,
 				D9DBAE9F1BE5AF99000478D8 /* Story */,
 				D9EC76131BE50BB2000DE867 /* Main.storyboard */,
 				D9EC76161BE50BB2000DE867 /* Assets.xcassets */,
@@ -417,6 +442,9 @@
 				D9DBAE9E1BE5967A000478D8 /* DetailStoryViewController.m in Sources */,
 				D9EC760F1BE50BB2000DE867 /* AppDelegate.m in Sources */,
 				3D3780071BE6405300932EF5 /* MessageCellXib.m in Sources */,
+				5FE565B11BE6A029003BD539 /* AddFilterVC.m in Sources */,
+				5FE565B61BE6A049003BD539 /* UIImage+Filter.m in Sources */,
+				5FE565B21BE6A029003BD539 /* FilterStoryVC.m in Sources */,
 				D9EC760C1BE50BB2000DE867 /* main.m in Sources */,
 				3D37800F1BE6434B00932EF5 /* NickNameViewController.m in Sources */,
 				D9EC76441BE54D91000DE867 /* Story.m in Sources */,
