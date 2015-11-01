@@ -23,14 +23,14 @@
                             <constraint firstAttribute="height" constant="200" id="cjw-uN-ruR"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fvp-oQ-YhT">
-                        <rect key="frame" x="128" y="175" width="45" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fvp-oQ-YhT">
+                        <rect key="frame" x="78" y="175" width="45" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Role" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwa-MD-cGX">
-                        <rect key="frame" x="128" y="149" width="34" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Role" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iwa-MD-cGX">
+                        <rect key="frame" x="78" y="152" width="34" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
@@ -40,9 +40,10 @@
                     <constraint firstItem="muz-31-Hqk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7ZG-nM-3KU"/>
                     <constraint firstItem="muz-31-Hqk" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ETQ-av-MfT"/>
                     <constraint firstAttribute="bottomMargin" secondItem="muz-31-Hqk" secondAttribute="bottom" constant="-6" id="FxJ-8M-6Kh"/>
-                    <constraint firstItem="Fvp-oQ-YhT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="120" id="Glc-DY-rFR"/>
+                    <constraint firstItem="Fvp-oQ-YhT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="70" id="Glc-DY-rFR"/>
                     <constraint firstItem="muz-31-Hqk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Ji8-N8-h3E"/>
-                    <constraint firstItem="Fvp-oQ-YhT" firstAttribute="top" secondItem="iwa-MD-cGX" secondAttribute="bottom" constant="5" id="LA9-Tm-F1C"/>
+                    <constraint firstItem="Fvp-oQ-YhT" firstAttribute="top" secondItem="iwa-MD-cGX" secondAttribute="bottom" constant="2" id="LA9-Tm-F1C"/>
+                    <constraint firstItem="Fvp-oQ-YhT" firstAttribute="leading" secondItem="muz-31-Hqk" secondAttribute="leading" constant="5" id="QXx-t2-VFM"/>
                     <constraint firstItem="iwa-MD-cGX" firstAttribute="leading" secondItem="Fvp-oQ-YhT" secondAttribute="leading" id="VOW-a3-R4c"/>
                     <constraint firstAttribute="bottomMargin" secondItem="muz-31-Hqk" secondAttribute="bottom" id="cih-2Z-DDx"/>
                     <constraint firstItem="Fvp-oQ-YhT" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="nSh-2D-fhg"/>
@@ -56,6 +57,7 @@
                         <exclude reference="cih-2Z-DDx"/>
                         <exclude reference="qkq-S3-YFW"/>
                         <exclude reference="wUV-pQ-U1k"/>
+                        <exclude reference="Glc-DY-rFR"/>
                     </mask>
                 </variation>
             </tableViewCellContentView>
