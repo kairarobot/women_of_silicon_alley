@@ -32,6 +32,14 @@
     
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:YES];
+    
+    self.storyDetailLabel.hidden = YES;
+    self.nameLabel.hidden = YES;
+    self.roleLabel.hidden = YES;
+}
+
 
 
 @end
