@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "StoryTableViewCell.h"
 #import <ParseUI/ParseUI.h>
+#import "DetailStoryViewController.h"
 
 @interface ViewController ()
 <
@@ -122,6 +123,30 @@ UITableViewDelegate
     [cell.storyImageView loadInBackground];
     
     return cell;
+}
+
+#pragma mark - Navigation
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath  {
+    [self performSegueWithIdentifier:@"DetailSegueIdentifier" sender:nil];
+}
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([segue.identifier isEqualToString:@"DetailSegueIdentifier"]) {
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        DetailStoryViewController *detailVC = segue.destinationViewController;
+        
+        Story *current = self.storyArray[indexPath.row];
+        
+        detailVC.selected = current;
+        
+        
+    }
+    
 }
 
 

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		561A3CE40E25D639F6A321CD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E10D0A837233AA80C18C18DF /* libPods.a */; };
+		D9DBAE9E1BE5967A000478D8 /* DetailStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DBAE9D1BE5967A000478D8 /* DetailStoryViewController.m */; };
 		D9EC760C1BE50BB2000DE867 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EC760B1BE50BB2000DE867 /* main.m */; };
 		D9EC760F1BE50BB2000DE867 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EC760E1BE50BB2000DE867 /* AppDelegate.m */; };
 		D9EC76121BE50BB2000DE867 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9EC76111BE50BB2000DE867 /* ViewController.m */; };
@@ -41,6 +42,8 @@
 /* Begin PBXFileReference section */
 		3029A458CAEDFE2E8B2A7FB5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		43D9E24FB51B9399CE6E1D61 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D9DBAE9C1BE5967A000478D8 /* DetailStoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailStoryViewController.h; sourceTree = "<group>"; };
+		D9DBAE9D1BE5967A000478D8 /* DetailStoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailStoryViewController.m; sourceTree = "<group>"; };
 		D9EC76071BE50BB2000DE867 /* WomenOfSiliconAlley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WomenOfSiliconAlley.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9EC760B1BE50BB2000DE867 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D9EC760D1BE50BB2000DE867 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -134,6 +137,8 @@
 				D9EC763D1BE52A54000DE867 /* StoryTableViewCell.h */,
 				D9EC763E1BE52A54000DE867 /* StoryTableViewCell.m */,
 				D9EC763F1BE52A54000DE867 /* StoryTableViewCell.xib */,
+				D9DBAE9C1BE5967A000478D8 /* DetailStoryViewController.h */,
+				D9DBAE9D1BE5967A000478D8 /* DetailStoryViewController.m */,
 				D9EC76131BE50BB2000DE867 /* Main.storyboard */,
 				D9EC76161BE50BB2000DE867 /* Assets.xcassets */,
 				D9EC76181BE50BB2000DE867 /* LaunchScreen.storyboard */,
@@ -347,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9EC76121BE50BB2000DE867 /* ViewController.m in Sources */,
+				D9DBAE9E1BE5967A000478D8 /* DetailStoryViewController.m in Sources */,
 				D9EC760F1BE50BB2000DE867 /* AppDelegate.m in Sources */,
 				D9EC760C1BE50BB2000DE867 /* main.m in Sources */,
 				D9EC76441BE54D91000DE867 /* Story.m in Sources */,
