@@ -1,6 +1,8 @@
 # WomenOfSiliconAlley
 
-## Sharing the stories of women from Silicon Alley, our very own tech hub in the heart of New York City.
+### Sharing the stories of women from Silicon Alley, our very own tech hub in the heart of New York City.
+
+Follow the stories in [Facebook](https://www.facebook.com/womenofsiliconalley/)
 
 ![womenofsiliconalleyapp](https://raw.githubusercontent.com/Zovfreullia/WomenOfSiliconAlley/master/WoSA.gif)
 
