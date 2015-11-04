@@ -1,3 +1,0 @@
-# WomenOfSiliconAlley
-
-# WomenOfSiliconAlley
